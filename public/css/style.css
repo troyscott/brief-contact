@@ -3,6 +3,21 @@
     margin: 20px;
 }
 
+.link-to-button {
+ text-decoration: none; 
+ color: black;
+  
+}
+.button {
+   padding: 5px;
+   background-color: #dcdcdc;
+   border: 1px solid  #666;
+   color: #000;
+   text-decoration: none;
+  
+
+}
+
 .menu-item {
 
 color: #e69f1c;
@@ -32,6 +47,7 @@ background-color: #E0E0E0 ;
 }
 
 .contact-list {
+ padding: 5px;
  width: 40%;
  height: 100%;
  border-right: 1px solid #999;
@@ -40,6 +56,7 @@ background-color: #E0E0E0 ;
 }
 
 .contact-profile {
-  width: 59.40%;
+  padding: 5px;
+  width: 55%;
   float: left;  
 }

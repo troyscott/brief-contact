@@ -32,8 +32,11 @@
   </script>
   
   <script type="text/x-handlebars" id="contacts">
-    {{#link-to "contacts.create" }}Add{{/link-to}}
-      <div class="contact-group">
+    <div>
+    <button >{{#link-to "contacts.create" class="link-to-button" }}Add{{/link-to}}</button>
+    </div>
+    <br>
+        <div class="contact-group">
       <div class="contact-list">
       {{#each contact in controller}}
       {{contact.first}} {{contact.last}} 
@@ -53,7 +56,7 @@
     
     First Name: {{first}} <br>
     Last Name: {{last}}   <br>
-    Phone Number: {{phone}} <br>
+    Phone Number: {{phone}} <br><br>
     <button {{action "edit"}}>Edit</button>
     <button {{action "delete"}}>Delete</button>
     <br><br>
