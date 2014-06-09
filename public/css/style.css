@@ -5,11 +5,13 @@
 
 .menu-item {
 
-color: green;
+color: #e69f1c;
+font-weight: bold;
 padding: 10px;
 margin: 5px;
 border: 1px solid #999;
 
+  
 }
 
 .menu-top
@@ -17,7 +19,7 @@ border: 1px solid #999;
 	padding: 20px;
 	margin: 5px;
 	border: 2px solid #999;
-background-color: lightgrey;	
+background-color: #E0E0E0 ;	
 
 
 }
