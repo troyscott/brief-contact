@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ember Starter Kit</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Define the main application -->
+  <script type="text/x-handlebars" id="application">
+    <h2>Brief Contact</h2>
+    <hr>
+    <div class="menu-top">
+    {{#link-to 'index' class="menu-item" }}Home{{/link-to}}
+    {{#link-to 'contacts' class="menus-item" }}Contacts{{/link-to}} 
+    
+    </div>
+    <br>
+    <br>
+    {{outlet}}
+  </script>
+  
+  <!-- Define templates below here -->  
+  
+  <!-- Define home page -->
+  <script type="text/x-handlebars" id="index">
+    Brief contact is a simple contact management app powered by emberjs and nodejs.
+    
+    <h3>Recent Contacts</h3>
+    
+  </script>
+  
+  <script type="text/x-handlebars" id="contacts">
+      <div class="contact-group">
+      <div class="contact-list">
+      {{#each contact in controller}}
+      {{contact.first}} {{contact.last}} 
+      {{#link-to "contact" contact}}details{{/link-to}}
+      {{#link-to "contact.edit" contact}}edit{{/link-to}}
+      <br>
+      {{/each}}
+      </div>
+      
+      <div class="contact-profile">
+      {{outlet}}
+      </div>
+      </div>
+  </script>
+  
+  <script type="text/x-handlebars" id="contact">
+    
+    First Name: {{first}} <br>
+    Last Name: {{last}}   <br>
+    Phone Number: {{phone}} <br>
+    
+    {{outlet}}
+  
+  </script>
+  
+  <script type="text/x-handlebars" id="contact/edit">
+   <hr>
+    First Name: {{input value=first }} <br>
+    Last Name: {{input value=last}}   <br>
+    Phone Number: {{input value=phone}}<br>
+    
+  </script>
+
+  <script src="js/libs/jquery-1.10.2.js"></script>
+  <script src="js/libs/handlebars-1.1.2.js"></script>
+  <script src="js/libs/ember-debug.js"></script>
+  <script src="js/libs/ember-data.js"></script>
+  
+  <script src="js/app.js"></script>
+  <!-- to activate the test runner, add the "?test" query string parameter -->
+  <script src="tests/runner.js"></script>
+</body>
+</html>

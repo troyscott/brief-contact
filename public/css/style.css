@@ -1,0 +1,43 @@
+/* Put your CSS here */
+.ember-application {
+    margin: 20px;
+}
+
+.menu-item {
+
+color: green;
+padding: 10px;
+margin: 5px;
+border: 1px solid #999;
+
+}
+
+.menu-top
+{
+	padding: 20px;
+	margin: 5px;
+	border: 2px solid #999;
+background-color: lightgrey;	
+
+
+}
+
+.contact-group {
+  width: 50%;
+  height: 400px;
+  border: 1px solid #999;
+  
+}
+
+.contact-list {
+ width: 40%;
+ height: 100%;
+ border-right: 1px solid #999;
+ float: left;
+  
+}
+
+.contact-profile {
+  width: 59.40%;
+  float: left;  
+}
